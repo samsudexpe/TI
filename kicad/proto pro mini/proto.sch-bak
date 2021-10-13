@@ -88,52 +88,27 @@ Wire Wire Line
 Wire Wire Line
 	2150 5200 2250 5200
 $Comp
-L SamacSys_Parts:MAX1615EUK+ IC2
-U 1 1 5F252132
-P 2400 1600
-F 0 "IC2" H 2950 1875 50  0000 C CNN
-F 1 "MAX1615EUK+" H 2950 1784 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT95P280X145-5N" H 4150 1700 50  0001 L CNN
-F 3 "http://docs-emea.rs-online.com/webdocs/0811/0900766b8081149c.pdf" H 5100 1600 50  0001 L CNN
-F 4 "MAX1615 5V/3.3V 30mA regulator SOT23 MAX1615EUK+, Low Dropout Voltage Regulator, Adjustable 0.03A, 3.3 V, 5 V +/-2%, 0.571W, 5-Pin SOT-23" H 5050 1500 50  0001 L CNN "Description"
-F 5 "1.45" H 4950 1400 50  0001 L CNN "Height"
-F 6 "Maxim Integrated" H 4950 1300 50  0001 L CNN "Manufacturer_Name"
-F 7 "MAX1615EUK+" H 4900 1200 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "6106312P" H 5200 1000 50  0001 L CNN "RS Part Number"
-F 9 "http://uk.rs-online.com/web/p/products/6106312P" H 5000 900 50  0001 L CNN "RS Price/Stock"
-	1    2400 1600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C5
 U 1 1 5F268983
-P 2200 1700
-F 0 "C5" H 2315 1746 50  0000 L CNN
-F 1 "0.1µF" H 2315 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2238 1550 50  0001 C CNN
-F 3 "~" H 2200 1700 50  0001 C CNN
-	1    2200 1700
+P 2200 1850
+F 0 "C5" H 2315 1896 50  0000 L CNN
+F 1 "1µF" H 2315 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2238 1700 50  0001 C CNN
+F 3 "~" H 2200 1850 50  0001 C CNN
+	1    2200 1850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C7
 U 1 1 5F268F3F
-P 3650 1700
-F 0 "C7" H 3765 1746 50  0000 L CNN
-F 1 "4.7µF" H 3765 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3688 1550 50  0001 C CNN
-F 3 "~" H 3650 1700 50  0001 C CNN
-	1    3650 1700
+P 3650 1850
+F 0 "C7" H 3765 1896 50  0000 L CNN
+F 1 "1µF" H 3765 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3688 1700 50  0001 C CNN
+F 3 "~" H 3650 1850 50  0001 C CNN
+	1    3650 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 1550 2400 1550
-Wire Wire Line
-	2400 1850 2200 1850
-Wire Wire Line
-	3500 1850 3650 1850
-Wire Wire Line
-	3500 1550 3650 1550
 $Comp
 L power:GND #PWR0110
 U 1 1 5F26E573
@@ -145,8 +120,6 @@ F 3 "" H 2950 2150 50  0001 C CNN
 	1    2950 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 2100 2950 2150
 $Comp
 L power:VCC #PWR0111
 U 1 1 5F27001C
@@ -266,111 +239,18 @@ Wire Wire Line
 	5950 1550 6000 1550
 Text GLabel 5950 1550 0    50   Input ~ 0
 c_mesurevcc
-Wire Wire Line
-	7000 2250 7050 2250
-Wire Wire Line
-	7000 2000 7000 2250
-Text GLabel 7050 2250 2    50   Output ~ 0
+Text GLabel 7000 1650 2    50   Output ~ 0
 Vccm
-Wire Wire Line
-	6300 2300 6300 2250
-Wire Wire Line
-	6000 2300 6000 2250
-$Comp
-L power:GND #PWR0116
-U 1 1 5F2DD3B7
-P 6300 2300
-F 0 "#PWR0116" H 6300 2050 50  0001 C CNN
-F 1 "GND" H 6305 2127 50  0000 C CNN
-F 2 "" H 6300 2300 50  0001 C CNN
-F 3 "" H 6300 2300 50  0001 C CNN
-	1    6300 2300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0115
 U 1 1 5F2DCEC3
-P 6000 2300
-F 0 "#PWR0115" H 6000 2050 50  0001 C CNN
-F 1 "GND" H 6005 2127 50  0000 C CNN
-F 2 "" H 6000 2300 50  0001 C CNN
-F 3 "" H 6000 2300 50  0001 C CNN
-	1    6000 2300
+P 6000 2000
+F 0 "#PWR0115" H 6000 1750 50  0001 C CNN
+F 1 "GND" H 6005 1827 50  0000 C CNN
+F 2 "" H 6000 2000 50  0001 C CNN
+F 3 "" H 6000 2000 50  0001 C CNN
+	1    6000 2000
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 1300 6300 1250
-Wire Wire Line
-	7000 1300 7000 1600
-Wire Wire Line
-	6300 1300 7000 1300
-Connection ~ 6300 1300
-Wire Wire Line
-	6300 1350 6300 1300
-Wire Wire Line
-	6300 1800 6300 1950
-Wire Wire Line
-	6300 1800 6700 1800
-Connection ~ 6300 1800
-Wire Wire Line
-	6300 1750 6300 1800
-Wire Wire Line
-	6000 1950 6000 1550
-$Comp
-L power:VCC #PWR0114
-U 1 1 5F2CED0A
-P 6300 1250
-F 0 "#PWR0114" H 6300 1100 50  0001 C CNN
-F 1 "VCC" H 6317 1423 50  0000 C CNN
-F 2 "" H 6300 1250 50  0001 C CNN
-F 3 "" H 6300 1250 50  0001 C CNN
-	1    6300 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5F2CBC20
-P 6300 2100
-F 0 "R4" H 6370 2146 50  0000 L CNN
-F 1 "100K" H 6370 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 2100 50  0001 C CNN
-F 3 "~" H 6300 2100 50  0001 C CNN
-	1    6300 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5F2CB47C
-P 6000 2100
-F 0 "R3" H 6070 2146 50  0000 L CNN
-F 1 "100K" H 6070 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 2100 50  0001 C CNN
-F 3 "~" H 6000 2100 50  0001 C CNN
-	1    6000 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:Si2319CDS Q2
-U 1 1 5F2BDF6E
-P 6900 1800
-F 0 "Q2" H 7106 1754 50  0000 L CNN
-F 1 "Si2319CDS" H 7106 1845 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 1725 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/66709/si2319cd.pdf" H 6900 1800 50  0001 L CNN
-	1    6900 1800
-	1    0    0    1   
-$EndComp
-Connection ~ 6000 1550
-$Comp
-L Transistor_FET:Si2319CDS Q1
-U 1 1 5F2BC5A1
-P 6200 1550
-F 0 "Q1" H 6406 1504 50  0000 L CNN
-F 1 "Si2319CDS" H 6406 1595 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6400 1475 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/66709/si2319cd.pdf" H 6200 1550 50  0001 L CNN
-	1    6200 1550
-	1    0    0    1   
 $EndComp
 $Comp
 L Switch:SW_Push SW1
@@ -616,8 +496,6 @@ Text GLabel 4850 5100 0    50   BiDi ~ 0
 A7
 Wire Wire Line
 	4850 5100 4900 5100
-Wire Wire Line
-	4850 5000 4900 5000
 Text GLabel 4850 4000 0    50   BiDi ~ 0
 Reset
 Wire Wire Line
@@ -672,45 +550,45 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5F4075B2
-P 9300 3500
-F 0 "H1" H 9400 3546 50  0000 L CNN
-F 1 "MountingHole" H 9400 3455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mmmodif" H 9300 3500 50  0001 C CNN
-F 3 "~" H 9300 3500 50  0001 C CNN
-	1    9300 3500
+P 9750 1350
+F 0 "H1" H 9850 1396 50  0000 L CNN
+F 1 "MountingHole" H 9850 1305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mmmodif" H 9750 1350 50  0001 C CNN
+F 3 "~" H 9750 1350 50  0001 C CNN
+	1    9750 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5F407C42
-P 9300 3750
-F 0 "H2" H 9400 3796 50  0000 L CNN
-F 1 "MountingHole" H 9400 3705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mmmodif" H 9300 3750 50  0001 C CNN
-F 3 "~" H 9300 3750 50  0001 C CNN
-	1    9300 3750
+P 9750 1600
+F 0 "H2" H 9850 1646 50  0000 L CNN
+F 1 "MountingHole" H 9850 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mmmodif" H 9750 1600 50  0001 C CNN
+F 3 "~" H 9750 1600 50  0001 C CNN
+	1    9750 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5F407D8F
-P 9300 4000
-F 0 "H3" H 9400 4046 50  0000 L CNN
-F 1 "MountingHole" H 9400 3955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mmmodif" H 9300 4000 50  0001 C CNN
-F 3 "~" H 9300 4000 50  0001 C CNN
-	1    9300 4000
+P 9750 1850
+F 0 "H3" H 9850 1896 50  0000 L CNN
+F 1 "MountingHole" H 9850 1805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mmmodif" H 9750 1850 50  0001 C CNN
+F 3 "~" H 9750 1850 50  0001 C CNN
+	1    9750 1850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5F407EA9
-P 9300 4250
-F 0 "H4" H 9400 4296 50  0000 L CNN
-F 1 "MountingHole" H 9400 4205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mmmodif" H 9300 4250 50  0001 C CNN
-F 3 "~" H 9300 4250 50  0001 C CNN
-	1    9300 4250
+P 9750 2100
+F 0 "H4" H 9850 2146 50  0000 L CNN
+F 1 "MountingHole" H 9850 2055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mmmodif" H 9750 2100 50  0001 C CNN
+F 3 "~" H 9750 2100 50  0001 C CNN
+	1    9750 2100
 	1    0    0    -1  
 $EndComp
 Text GLabel 4950 1800 2    50   BiDi ~ 0
@@ -734,10 +612,6 @@ Wire Wire Line
 	1500 4200 1350 4200
 Wire Wire Line
 	2950 2150 3650 2150
-Wire Wire Line
-	3650 2150 3650 1850
-Connection ~ 2950 2150
-Connection ~ 3650 1850
 Wire Notes Line
 	800  750  4100 750 
 Wire Notes Line
@@ -774,4 +648,79 @@ Text Notes 2000 950  0    50   ~ 0
 Alimentation
 Text Notes 2600 2850 0    50   ~ 0
 µControlleur
+$Comp
+L SamacSys_Parts:CPC1008N K1
+U 1 1 6099EE8A
+P 5350 1550
+F 0 "K1" H 6425 1815 50  0000 C CNN
+F 1 "CPC1008N" H 6425 1724 50  0000 C CNN
+F 2 "SamacSys_Parts:SOP254P610X216-4N" H 6700 1650 50  0001 L CNN
+F 3 "http://www.ixysic.com/home/pdfs.nsf/www/CPC1008N.pdf/$file/CPC1008N.pdf" H 6700 1550 50  0001 L CNN
+F 4 "SPST-NO Solid State Relay Solder 150 mA rms/mA dc Surface Mount, DC Relay" H 6700 1450 50  0001 L CNN "Description"
+F 5 "2.161" H 6700 1350 50  0001 L CNN "Height"
+F 6 "IXYS SEMICONDUCTOR" H 6700 1250 50  0001 L CNN "Manufacturer_Name"
+F 7 "CPC1008N" H 6700 1150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "CPC1008N" H 6700 1050 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/cpc1008n/ixys" H 6700 950 50  0001 L CNN "Arrow Price/Stock"
+F 10 "849-CPC1008N" H 6700 850 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.com/Search/Refine.aspx?Keyword=849-CPC1008N" H 6700 750 50  0001 L CNN "Mouser Price/Stock"
+	1    5350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0114
+U 1 1 5F2CED0A
+P 6950 1450
+F 0 "#PWR0114" H 6950 1300 50  0001 C CNN
+F 1 "VCC" H 6967 1623 50  0000 C CNN
+F 2 "" H 6950 1450 50  0001 C CNN
+F 3 "" H 6950 1450 50  0001 C CNN
+	1    6950 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1450 6950 1550
+Wire Wire Line
+	6950 1550 6850 1550
+Wire Wire Line
+	6850 1650 7000 1650
+Wire Wire Line
+	6000 1650 6000 2000
+$Comp
+L malib:NCP718BSN180T1G U1
+U 1 1 609C7745
+P 2750 1450
+F 0 "U1" H 2950 1615 50  0000 C CNN
+F 1 "NCP718BSN330T1G" H 2950 1524 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 2750 1450 50  0001 C CNN
+F 3 "" H 2750 1450 50  0001 C CNN
+	1    2750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1550 2550 1550
+Wire Wire Line
+	2650 1700 2550 1700
+Wire Wire Line
+	2550 1700 2550 1550
+Connection ~ 2550 1550
+Wire Wire Line
+	2550 1550 2650 1550
+Wire Wire Line
+	3250 1550 3650 1550
+Wire Wire Line
+	2950 1950 2950 2150
+Connection ~ 2950 2150
+Wire Wire Line
+	2200 2150 2950 2150
+Wire Wire Line
+	2200 1700 2200 1550
+Wire Wire Line
+	2200 2000 2200 2150
+Wire Wire Line
+	3650 1700 3650 1550
+Wire Wire Line
+	3650 2000 3650 2150
+Wire Wire Line
+	4850 5000 4900 5000
 $EndSCHEMATC

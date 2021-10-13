@@ -49,7 +49,6 @@ F 3 "" H 1000 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1000 1350 1000 1450
-NoConn ~ 2550 1450
 Connection ~ 1000 1450
 $Comp
 L power:+3.3V #PWR0107
@@ -65,28 +64,15 @@ $EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 5F26361F
-P 1000 1900
-F 0 "#PWR0108" H 1000 1650 50  0001 C CNN
-F 1 "GND" H 1005 1727 50  0000 C CNN
-F 2 "" H 1000 1900 50  0001 C CNN
-F 3 "" H 1000 1900 50  0001 C CNN
-	1    1000 1900
+P 1900 1900
+F 0 "#PWR0108" H 1900 1650 50  0001 C CNN
+F 1 "GND" H 1905 1727 50  0000 C CNN
+F 2 "" H 1900 1900 50  0001 C CNN
+F 3 "" H 1900 1900 50  0001 C CNN
+	1    1900 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 5F263A51
-P 2650 1900
-F 0 "#PWR0109" H 2650 1650 50  0001 C CNN
-F 1 "GND" H 2655 1727 50  0000 C CNN
-F 2 "" H 2650 1900 50  0001 C CNN
-F 3 "" H 2650 1900 50  0001 C CNN
-	1    2650 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 1900 2650 1850
-Text GLabel 1450 1650 0    50   Input ~ 0
+Text GLabel 1550 1600 0    50   Input ~ 0
 veille
 $Comp
 L Device:R R2
@@ -247,7 +233,7 @@ L Device:R R7
 U 1 1 5F45FF86
 P 6950 1500
 F 0 "R7" H 7020 1546 50  0000 L CNN
-F 1 "5K" H 7020 1455 50  0000 L CNN
+F 1 "10K" H 7020 1455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6880 1500 50  0001 C CNN
 F 3 "~" H 6950 1500 50  0001 C CNN
 	1    6950 1500
@@ -688,30 +674,8 @@ F 3 "~" H 9950 1500 50  0001 C CNN
 	1    9950 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L SamacSys_Parts:AP7380-33WR5-7 IC1
-U 1 1 5F3F010B
-P 1450 1450
-F 0 "IC1" H 2000 1715 50  0000 C CNN
-F 1 "AP7380-33WR5-7" H 2000 1624 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT95P285X140-5N" H 2400 1550 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP7380.pdf" H 2400 1450 50  0001 L CNN
-F 4 "LDO Voltage Regulators LDO CMOS LowCurr" H 2400 1350 50  0001 L CNN "Description"
-F 5 "1.4" H 2400 1250 50  0001 L CNN "Height"
-F 6 "Diodes Inc." H 2400 1150 50  0001 L CNN "Manufacturer_Name"
-F 7 "AP7380-33WR-7" H 2400 1050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "AP7380-33WR-7" H 2400 950 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/ap7380-33wr-7/diodes-incorporated" H 2400 850 50  0001 L CNN "Arrow Price/Stock"
-F 10 "621-AP7380-33WR-7" H 2400 750 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP7380-33WR-7?qs=MHUP4w%2FlnDyRjXaVHenQAg%3D%3D" H 2400 650 50  0001 L CNN "Mouser Price/Stock"
-	1    1450 1450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2650 1350 2650 1550
-Wire Wire Line
-	2550 1550 2650 1550
-Connection ~ 2650 1550
+	2650 1350 2650 1450
 $Comp
 L Connector_Generic:Conn_01x05 J6
 U 1 1 5F3348A6
@@ -743,16 +707,7 @@ Wire Notes Line
 Wire Notes Line
 	4950 800  4950 2600
 Wire Wire Line
-	1000 1450 1450 1450
-Wire Wire Line
-	1150 1550 1150 1750
-Wire Wire Line
-	1150 1750 1000 1750
-Wire Wire Line
-	1150 1550 1450 1550
-Connection ~ 1000 1750
-Wire Wire Line
-	1000 1750 1000 1900
+	1000 1750 1000 1850
 Wire Notes Line
 	650  800  3100 800 
 Wire Notes Line
@@ -831,4 +786,31 @@ F 3 "~" H 2600 4050 50  0001 C CNN
 $EndComp
 Text Notes 1250 3000 0    50   ~ 0
 Connecteur µControlleur
+Wire Wire Line
+	1000 1450 1600 1450
+Wire Wire Line
+	1550 1600 1600 1600
+Wire Wire Line
+	2200 1450 2650 1450
+Connection ~ 2650 1450
+Wire Wire Line
+	2650 1450 2650 1550
+Connection ~ 1900 1850
+Wire Wire Line
+	1900 1850 2650 1850
+Wire Wire Line
+	1900 1850 1000 1850
+$Comp
+L malib:NCP718BSN180T1G U1
+U 1 1 60996719
+P 1700 1350
+F 0 "U1" H 1900 1515 50  0000 C CNN
+F 1 "MIC5225-3.3YM5-TR" H 1900 1424 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1700 1350 50  0001 C CNN
+F 3 "" H 1700 1350 50  0001 C CNN
+	1    1700 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1850 1900 1900
 $EndSCHEMATC
