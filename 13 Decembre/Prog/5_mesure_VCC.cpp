@@ -1,0 +1,37 @@
+#include "h.h"
+
+const int Mesure = A7; 
+
+/////////////////////////////////////////////////////////////////
+
+String mesure(void)//mesure de la tension des piles
+{ float tension;
+  long i=0;
+ 
+
+
+
+  i=0;
+  tension=0;
+  pinMode(7,OUTPUT);
+ 
+  digitalWrite(7,HIGH);
+  pinMode(Mesure,INPUT);
+  analogReference(INTERNAL);
+  delay(100);
+  
+  for(long c=0;c<=1000;c++)
+    {
+     i=i+analogRead(Mesure);
+    }
+  i=i/1000;
+  
+  tension = (i * (1.2 / 1023.0))*10;
+
+//pinMode(A7,OUTPUT);
+  
+  digitalWrite(7,LOW);
+  pinMode(7,INPUT);
+  //delay(100); 
+  return "tension pile : "+String(tension, 3);
+}
