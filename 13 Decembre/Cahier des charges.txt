@@ -1,0 +1,15 @@
+Objectif principal :
+
+- Pouvoir se connecter au module bluetooth avec l'appli
+- Collecter les données, les visualiser et les stocker ( téléphone, mail , mini serveur)
+- Pouvoir visualiser les données de façon graphique
+- Pouvoir Renommer le module Bluetooth
+- Pouvoir visualiser les données déja stocker (sur le téléphone ou autres)
+
+
+Objectif secondaire :
+
+- Visualiser l'état des piles 
+- Intégrer une carte où l'on pourra ajouter des points qui correspondront au boitier installé
+- À partir de la carte et en cliquant sur un point, pouvoir visualiser graphiquement les données
+  déja stocké pour le boitier en question 
