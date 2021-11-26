@@ -9,6 +9,7 @@ Objectif principal :
 
 Objectif secondaire :
 
+- Envoyer l'heure et la date du smartphone a l'arduino au moment de la connexion Bluetooth
 - Visualiser l'état des piles 
 - Intégrer une carte où l'on pourra ajouter des points qui correspondront au boitier installé
 - À partir de la carte et en cliquant sur un point, pouvoir visualiser graphiquement les données
